@@ -1,0 +1,71 @@
+{% extends 'html/base.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static '/styles/edu.css' %}">
+    <title>Site portifólio(Guilherme Dutra)</title>
+</head>
+<body>
+    <section>
+        <div class="conteiner">
+            <div class="educ">
+                <div class="faculdade">
+                    <h2>Faculdade:</h2>
+                    <p>Faço faculdade de engenharia de software na Estácio, ingressei em </br> março de 2024.</p>
+                </div>
+                <div class="curso">
+                    <h2>Curso:</h2>
+                    <p>O curso é pela Alura, eu foco em programação e front-end
+                        tenho<br> planos de começar a estudar a linguagem Go e 
+                        aprender mais sobre desenvolvimento para mobile,
+                        começei em março de 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrosel">
+        <div class="titulo-carrosel">
+            <h2 class="h2-carrosel">Alguns certificados</h2>
+            <p class="aviso">Clique e arraste!</p>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="{% static '/imagens/Django.png' %}" class="certificado"></div>
+              <div class="swiper-slide"><img src="{% static '/imagens/Django-API.png' %}" class="certificado"></div>
+              <div class="swiper-slide"><img src="{% static '/imagens/python-objeto.png' %}" class="certificado"></div>
+              <div class="swiper-slide"><img src="{% static '/imagens/HTML-CSS-zero.png' %}" class="certificado"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <a href="{% url 'cert' %}"><p class="ver-mais">Clique aqui para ver mais</p></a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 2,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: true,
+            });
+
+    </script>
+    {% endblock %}

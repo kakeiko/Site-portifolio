@@ -1,0 +1,71 @@
+
+:root{
+    --cor-Letras:#EFDFC5;
+    --cor-Letras-2:#dc2011;
+    --cor-Background: #252b2b;
+    --cor-background-2: #4c4f54;
+}
+
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: 'Righteous';
+    color: var(--cor-Letras);
+}
+
+body{
+    background-color: var(--cor-background-2);
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10em 0 0em 18em;
+}
+
+.educ h2{
+    color:var(--cor-Letras-2);
+    font-size: 3.5em;
+}
+
+.educ p{
+    font-size: 1.4em;
+    margin:.5em 0 0 6em;
+}
+
+.curso{
+    margin: 3em 0 3em 0;
+}
+
+.carrosel{
+    width: 60%;
+    margin: 0 17.5em;
+}
+ .certificado{
+    width: 100%;
+ }
+.h2-carrosel{
+    color: var(--cor-Letras-2);
+    margin: .5em 0;
+    font-size: 36px;
+}
+.ver-mais{
+    font-size: 12px;
+    margin-bottom: 1.5em;
+    position: relative;
+    left: 53.5em;
+    
+}
+.swiper{
+   position: relative;
+   left: 3em;
+}
+.aviso{
+    margin: .5em 0;
+}
+
+
+
+
+

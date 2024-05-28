@@ -1,0 +1,92 @@
+{% extends 'html/base.html' %}
+{% block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/styles/indexx.css' %}">
+  
+  <title>Site portifólio(Guilherme Dutra)</title>
+
+</head>
+<body>
+  <div class="conteiner">
+    <div class="pag1">
+      <img src="{% static '/imagens/CrazyDiamond_ASB.webp' %}" alt="" class="stand">
+      <img src="{% static '/imagens/minha-foto-2.png' %}" class="barou">
+      
+      <p class="texthome1">Seja bem-vindo ao meu pequeno domínio! Me chamo Guilherme
+        e tenho um objetivo de trabalhar com programação.
+        <br>
+        <br>
+        Apesar de gostar de front-end e back-end, eu sinto algo 
+        especial quando se trata de back-end. Tenho em meu arsenal o 
+        Python (Django, Tkinter, Pandas e estou estudando mais sobre
+        machine learning), JavaScript, HTML, CSS e SQL, sempre estou
+        em busca de novos desafio e de conhecimento. Tenho Criatividade
+        para resolver problemas com minhas ferramentas, Resiliência para 
+        não desistir perante adversidades e Humildade para saber que
+        não sei e nunca vou saber de tudo, mas isso não é motivo para 
+        não tentar.
+        <br>
+        <br>
+        Em meu portifólio você verá alguns projetos( finalizados ou em 
+        andamento ) com as ferramentas que eu citei acima
+        e com o passar do tempo terá cada vez mais projetos com
+         temas diferentes e desafio novos.
+        <br>
+        <br>
+        Agora um pouco da minha pessoa, sou meio introvertido,
+        pelo menos até pegar intimidade, sou calmo e gosto de ajudar,
+        gosto de jogar e ler mangás, sou carioca ,ainda não fui
+        baleado, tenho 19 anos, sou um pouco piadista, mas quando 
+        precisa sou sério.
+        </p>
+        
+    </div>
+    <div class="pag2">
+      <img src="{% static '/imagens/portifolio.png' %}" class="portifolio">
+      <p class="texthome2">Na parte de portifólio você verá todos os meu projetos,
+         cada projeto terá uma página exclusiva.
+        <br>
+        <br>
+        Cada projeto terá a data de postagem, o problema que ele
+        resolve, a linguagem ultilizada, o código, um link para
+        o github, o gênero e o seu status.
+        <br>
+        <br>
+        Lembrando que com o passar do tempo essa página será
+        atualizada com novas fictures e projetos diferentes.</p>
+        <img src="{% static '/imagens/linha tracejada.png' %}" class="linha1">
+        <img src="{% static '/imagens/linha tracejada.png' %}" class="linha2">
+    </div>
+    <div class="pag3">
+      <img src="{% static '/imagens/educacao.png' %}" class="educacao">
+      <p class="texthome3">Na área de educação terá os meus cursos e faculdade,
+        assim como certificados e certificações.
+        <br>
+        <br>
+        Também será filtrado por data, status e gênero.
+        <br>
+        <br>
+        Essa área terá atualizações sempre que necessário.</p>
+        <img src="{% static '/imagens/bgl abstrato.png' %}" class="bglabstrato">
+    </div>
+    <div class="pag4">
+      <img src="{% static '/imagens/pessoa.png' %}" class="pessoa">
+      <img src="{% static '/imagens/outro bgl abstrato.png' %}" class="abstrato2">
+      <p class="texthome4">Nessa última parte, será contado um pouco sobre mim,
+        objetivos, mentalidade, personalidade, gostos, entre outros.
+        <br>
+        <br>
+        Algumas coisas como formas de entrar em contato estará nessa 
+        parte.
+        <br>
+        <br>
+        espero q gostem desse meu site portifólio, até logo.</p>
+    </div>
+
+ 
+{% endblock %}

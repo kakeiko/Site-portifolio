@@ -1,0 +1,66 @@
+:root{
+    --cor-Letras:#EFDFC5;
+    --cor-Letras-2:#dc2011;
+    --cor-Background: #252b2b;
+    --cor-background-2: #4c4f54;
+}
+
+
+.principal{
+    position:fixed;
+    z-index: 1000;
+    left: 1rem;
+    top: 1rem;
+}
+.musashi{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.nome{
+    position: relative;
+    left: 170px;
+    bottom: 55px;
+    font-size: 24px;
+}
+
+.imgmenu {
+    width: 30px;
+    margin-right: 20px;
+
+}
+.menu{
+    display: grid;
+    margin-top: 70px;
+    width: 200px;
+}
+.menus{
+    margin: 10px 0px 20px 50px;
+    text-decoration: none;
+    
+}
+.textmenu{
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+    font-size: 20px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-Background);
+    
+}
+.git-img, .zap-img, .link-img{
+    width: 2.5vw;
+    margin: .5em 2em;
+}
+*{
+    padding-bottom: 0px;
+    margin: 0;
+    font-family: 'Righteous';
+    color: #EFDFC5;
+}

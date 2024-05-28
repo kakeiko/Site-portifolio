@@ -1,0 +1,27 @@
+{% extends 'html/base.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/c.css' %}">
+    <title>Site portifólio(Guilherme Dutra)</title>
+</head>
+<body>
+    
+   
+    <section class="certificados">
+        {% if cards %}
+        {% for certificado in cards %}
+        <div class="certificado">
+            <img src="{{ certificado.foto.url }}" class="imgcertificado">
+            <h2 class="titulos">{{ certificado.titulo }}</h2>
+        </div>
+        {% endfor %}
+        {% else %}
+        {% endif %}
+    </section>
+    {% endblock %}

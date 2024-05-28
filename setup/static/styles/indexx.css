@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    padding-bottom: 0px;
+    margin: 0;
+    font-family: 'Righteous';
+    color: #EFDFC5;
+}
+.pag1{
+    display: flex;
+    height: 650px;
+    background: #252B2B ;
+
+}
+.barou{
+    width: 200px;
+    height: 400px;
+    padding: 170px 10px 10px 400px;
+    position: relative;
+}
+.stand{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 290px;
+    top: 250px;
+    transform: rotate(-25deg);
+}
+.texthome1{
+    padding: 180px 200px 0px 0px;
+    font-size: 14px;
+    position: relative;
+}
+.pag2 {
+    background-color: #4C4F54;
+    height: 650px;
+}
+.portifolio{
+    width: 200px;
+    padding-left: 500px;
+    padding-top: 80px;
+}
+.linha1{
+    width: 120px;
+    position: relative;
+    left: 310px;
+    bottom: 60px;
+}
+.linha2{
+    width: 130px;
+    position: relative;
+    left: 270px;
+    top: 10px;
+    transform: rotate(90deg);
+}
+.texthome2{
+    padding-left: 400px;
+    padding-right: 400px;
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+}
+.pag3{
+    background-color: #252B2B;
+    height: 650px;
+}
+.educacao{
+    width: 200px;
+    padding-left: 300px;
+    padding-top: 250px;
+}
+.texthome3{
+    padding-left: 550px;
+    padding-right: 250px;
+    font-size: 16px;
+    position: relative;
+    bottom: 150px;
+}
+.bglabstrato{
+    width: 260px;
+    position: relative;
+    left: 900px;
+    bottom: 220px;
+}
+.pag4{
+    background-color: #4C4F54;
+    height: 650px;
+}
+.pessoa{
+    width: 200px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
+.texthome4{
+    padding-left: 450px;
+    padding-right: 300px;
+    position: relative;
+}
+
+
+.abstrato2{
+    width: 350px;
+    position: relative;
+    left: 300px;
+    top: 300px;
+    
+}

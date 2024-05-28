@@ -1,0 +1,30 @@
+{% load static %}
+{% block content %}{% endblock %}
+
+<link rel="stylesheet" href="{% static '/styles/base.css' %}">
+
+
+<div class="principal">
+    <div class="perfil">
+      <img src="{% static '/imagens/minha-foto.jpg' %}" class="musashi"><h1 class="nome">Guilherme Dutra | Kakeiko</h1>
+
+    </div>
+    <div class="menu">
+      <a href= "{% url 'home' %}" class="menus"><img src="{% static '/imagens/home.png' %}" class="imgmenu"><p class="textmenu">Home</p></a>
+      <a href= "{% url 'port' %}" class="menus"><img src="{% static '/imagens/portifolio.png' %}" class="imgmenu"><p class="textmenu">Portifólio</p></a>
+      <a href= "{% url 'edu' %}" class="menus"><img src="{% static '/imagens/educacao.png' %}" class="imgmenu"><p class="textmenu">Educação</p></a>
+      <a href= "{% url 'sobre' %}" class="menus"><img src="{% static '/imagens/pessoa.png' %}" class="imgmenu"><p class="textmenu">Sobre mim</p></a>
+    </div>
+  </div>
+
+<hr>
+      <footer>
+        <div class="redes">
+            <a href="https://github.com/kakeiko" target="_blank" class="git"><img src="{% static '/imagens/github.png' %}" class="git-img"></a>
+            <a href="https://wa.me/5522988341441" target="_blank" class="zap"><img src="{% static '/imagens/zap.png' %}" class="zap-img"></a>
+            <a href="https://www.linkedin.com/in/guilherme-dutra-55559625a/" target="_blank" class="link"><img src="{% static '/imagens/linkedin.png' %}" class="link-img"></a>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

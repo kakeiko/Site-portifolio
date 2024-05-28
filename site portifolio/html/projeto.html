@@ -1,0 +1,31 @@
+{% extends 'html/base.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/project.css' %}">
+    <title>Site portifólio(Guilherme Dutra)</title>
+</head>
+<body>
+    <section class="projeto">
+        <div class="img">
+            <img src="{{ projeto.foto.url }}" class="img-projeto">
+            <h1 class="titulo">{{ projeto.nome }}</h1>
+            <p class="Status">{{ projeto.status }}</p>
+            <p class="Post">Postado em: {{ projeto.data_postagem }}</p>
+            <p class="atualizado">Atualizado em: {{ projeto.data_atualizacao }}</p>
+        </div>
+        <div class="objetivo">
+            <p class="text-objetivo">{{ projeto.texto_objetivo }}</p>
+        </div>
+        <div class="video">
+            <video src="{{ projeto.video.url }}" type="mp4" controls="True" class="video-projeto"></video>
+            <a href="{{ projeto.link }}" class="codigo" target="_blank"><p>Veja o código</p></a>
+            <p class="text-projeto">{{ projeto.texto_projeto }}</p>
+        </div>
+    </section>
+{% endblock %}

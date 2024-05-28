@@ -1,0 +1,50 @@
+{% extends 'html/base.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/sobre.css' %}">
+    <title>Site portifólio(Guilherme Dutra)</title>
+</head>
+<body>
+    <section>
+        <div class="conteiner">
+            <div class="sobre">
+                <div class="imgsobre">
+                    <img src="{% static '/imagens/minha-foto.jpg' %}" class="musashi2">
+                </div>
+                <div class="sobre-mim">
+                    <h2>Porque começei a programar:</h2>
+                    <p>Eu sempre tive uma vontade de criar meu próprio jogo
+                        mas eu só começei a tentar isso de verdade em janeiro de
+                        2024, assim eu descobri que eu amo programar, de alguma 
+                        forma quando começo a codar e me deparo com desafio
+                        em que eu tenho que pensar de maneira criativa para
+                        superar-lo, fico empolgado e quando consigo a solução é
+                        uma sensação muito satisfatória. Por esse motivo que eu
+                        gosto de programar, pelos desafios.</p>
+                        <h2>Objetivo:</h2>
+                        <p>Hoje o meu principal objetivo é conseguir uma vaga como
+                            programador, seja ela back ou front-end, apesar de ter
+                            dito mais acima sobre ter vontade de criar meu prórpio
+                            jogo, eu ainda preciso de experiência, por isso que planejo
+                            adiar esse objetivo para daqui uns 10 a 15 anos.
+                            </p>
+                        <h2>Personalidade:</h2>
+                        <p>Sou um garoto introvertido e alegre, gosto de mangá, jogos
+                            música e de me exercitar, sou bem piadista, não gosto
+                            de mentiras e sou bastante calmo, tenho um atração por
+                            desafios (muito por causa dos souls-likes), alguns amigos
+                            me chamam de doente, talvez eu seja um pouco, mas
+                            me esforço para alcançar meus objetivos e tenho consciência
+                            de quem eu sou e do que eu quero.
+                            </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
